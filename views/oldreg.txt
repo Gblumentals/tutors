@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+	<title>fractal/tutor list</title>>
+  <body>
+  <div class="container" ng-controller="appCtrl">
+ 	
+ 	<table class="table">
+ 		<thead>
+ 			<th>Name</th>
+ 			<th>Email</th>
+ 			<th>Number</th>
+ 		</thead>	
+ 	</table> 	
+  <div ng-controller="appCtrl">
+  {{ gmes }}
+  </div>
+  	
+  </div>
+
+  	<form>
+  		<input type="txt" ng-model="test">
+  	</form>
+  </div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+	<script type="text/javascript">
+	// function appCtrl($scope){
+	// 	console.log("hello world from the controller");
+	// 	console.log($scope.test);
+	// } 
+	var myApp = angular.module('myApp', []); 
+myApp.controller('appCtrl', ['$scope', function($scope) {
+ 	console.log("Hello World from controller");
+ 	$scope.gmes = 'heyheyhey';
+ 	$scope.bmes ='nonono';
+ }]); 
+
+</script>
+	<!-- // <script type="text/javascript" src="controllers/controller.js"></script> -->
+  </body>
+</html>

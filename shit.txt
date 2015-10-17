@@ -1,0 +1,14 @@
+
+DROP TABLE info;
+
+DROP TABLE curriculum;
+
+DROP TABLE persons;
+
+DROP TABLE tutors;
+
+DROP TABLE comments;
+
+DROP TABLE services;
+
+DROP TABLE catagories;
