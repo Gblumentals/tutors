@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+	<!-- Latest compiled and minified CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+	<title>fractal/tutor list</title>>
+  <body>
+  <!-- <div class="container" ng-controller="appCtrl">
+ 	
+ 	<table class="table">
+ 		<thead>
+ 			<th>Name</th>
+ 			<th>Email</th>
+ 			<th>Number</th>
+ 		</thead>	
+ 	</table> 	
+  <div ng-controller="appCtrl">
+  {{ gmes }}
+  </div>
+  	
+  </div> -->
+<div class="container" length="400" width="400">
+  	<form class="userInfo">
+  		Name: <input type="txt" maxlength="30" id="name"><br>
+  		Surname: <input type="txt" maxlength="30" id="surname"><br>
+  		Phone number: (+371) <input type="txt" maxlength="8" id="phone"><br>
+  		Email: <input type="txt" maxlength="30" id="email"><br>
+  		password: <input type="txt" maxlength="30" id="pwd"><br>
+  		password confirmation: <input type="txt" maxlength="30" id="pwd_conf"><br>
+  		<input align="left" type="submit" value="Submit" >
+  	</form>
+ </div>
+  </div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+	<script type="text/javascript">
+	var myApp = angular.module('myApp', []);
+
+
+	$('.userInfo').submit(function(){
+		var name = $('#name').val(),
+			surname = $('#surname').val(),
+			phoneNumber = $('#phone').val(),
+			email = $('#email').val(),
+			pwd = $('#pwd').val(),
+			pwd_conf = $('#pwd_conf').val();
+			
+	});
+
+
+
+
+	// myApp.controller('userInfo', ['$scope',function($scope){
+	// 	console.log($scope.name);
+	// 	console.log($scope.surname);
+	// 	console.log($scope.phone);
+	// 	console.log($scope.email);
+	// }]);
+
+	// $('.check').on('load', function($this){
+	// $this='random text hahahaha';
+	// console.log($this);		
+	// });
+
+	// myApp.controller('appCtrl', ['$scope', function($scope) {
+ // 	console.log("Hello World from controller");
+ // 	$scope.gmes = 'heyheyhey';
+ // 	$scope.bmes ='nonono';
+ // }]); 
+
+</script>
+	<!-- // <script type="text/javascript" src="controllers/controller.js"></script> -->
+  </body>
+</html>
+
