@@ -3,12 +3,13 @@
   <head>
     <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
 	<!-- Latest compiled and minified CSS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
-	<title>fractal/tutor list</title>>
+	<title>fractal/tutor list</title>>\
   <body>
   <!-- <div class="container" ng-controller="appCtrl">
  	
@@ -24,6 +25,8 @@
   </div>
   	
   </div> -->
+  
+<div>
 <div class="container" length="400" width="400">
   	<form class="userInfo">
   		Name: <input type="txt" maxlength="30" id="name"><br>
@@ -35,21 +38,30 @@
   		<input align="left" type="submit" value="Submit" >
   	</form>
  </div>
-  </div>
+<div>
+  		<button  type="button" id="register">register</button>
 </div>
+</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
 	<script type="text/javascript">
 	var myApp = angular.module('myApp', []);
 
-
+$('.userInfo').hide();
+	$('#register').click(function(){
+	$('.userInfo').show();
+		});
+	
 	$('.userInfo').submit(function(){
+
 		var name = $('#name').val(),
 			surname = $('#surname').val(),
 			phoneNumber = $('#phone').val(),
-			email = $('#email').val();
-
+			email = $('#email').val(),
+			pwd = $('#pwd').val(),
+			pwd_conf = $('#pwd_conf').val();
+		alert([name, surname, phoneNumber, email, pwd, pwd_conf]);			
 	});
 
 

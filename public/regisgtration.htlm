@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+	<!-- Latest compiled and minified CSS -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+	<title>fractal/tutor list</title>>
+  <body>
+
+<div class="container" length="400" width="400">
+  	<form class="userInfo">
+  		Name: <input type="txt" maxlength="30" id="name"><br>
+  		Surname: <input type="txt" maxlength="30" id="surname"><br>
+  		Phone number: (+371) <input type="txt" maxlength="8" id="phone"><br>
+  		Email: <input type="txt" maxlength="30" id="email"><br>
+  		password: <input type="txt" maxlength="30" id="pwd"><br>
+  		password confirmation: <input type="txt" maxlength="30" id="pwd_conf"><br>
+  		<input align="left" type="submit" value="Submit" >
+  	</form>
+ </div>
+
+
+
+<script>  	
+	$('.userInfo').submit(function(){
+		var name = $('#name').val(),
+			surname = $('#surname').val(),
+			phoneNumber = $('#phone').val(),
+			email = $('#email').val(),
+			pwd = $('#pwd').val(),
+			pwd_conf = $('#pwd_conf').val();
+		console.log([name, surname, phoneNumber, email, pwd, pwd_conf]);			
+	});
+	</script>
+
+  </body>
+</html>
