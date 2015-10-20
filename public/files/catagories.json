@@ -1,0 +1,64 @@
+[{"matemātika" : {
+	"pamatskolas matemātika" : [
+	    "agrā matemātika",
+	    "Aritmētika",
+	    "Pirms algebra",
+	    "pamata ģeometrija",
+	    ],
+	"Vidusskolas matemātika un tālāk" : [
+	    "Algebras pamati",
+	    "Diferenciālā augstākā matemātika",
+	    "Algebra I",
+	    "Integrāļu augstākā matemātika",
+	    "Ģeometrija",
+	    "Algebra II",
+	    "Diferenciālie vienādojumi",
+	    "Trigonometrija",
+	    "Lineārā algebra",
+	    "Varbūtība un statistika"
+		] 
+	 	
+}},{
+"eksaktās zinātnes" : [
+	    "Bioloģija",
+	    "Organiskā ķīmīja",
+	    "Veselība un medicīna",
+	    "Fizika",
+	    "Kosmoloģija un astronomija",
+	    "Pētniecība",
+	    "Neorganiskā Ķīmīja"
+]},{
+
+"Ekonomika un finanses":
+[
+		"Mikroekonomika"
+	    "Makroekonomika",
+	    "Finanses",
+	    "Uzņēmējdarbība"
+
+]},{
+"Māksla un humanitārās zinātnes": [
+		    "Vēsture",
+		    "Mūzika"
+	],
+"Mākslas vēsture":[
+		    "Mākslas vēstures pamati",
+		    "Renesanse un Reformācija Eiropā",
+		    "Antīkā vēsture Eiropā un Āzijas rietumos",
+		    "Baroka, Rokoko un neo-klasiskā māklsa Eiropā",
+		    "Māksla Āzijā",
+		    "Mākla antīkajā Vidusjūrā",
+		    "Mākla Amerikā līdz pirmajam pasaules karam",
+		    "Māksla Afrikā",
+		    "Māksla Viduslaikos",
+		    "19.gadsimta māksla Eiropā",
+		    "Māksla Okeanijā",
+		    "Māksla Islāmā"
+]
+}];
+
+
+
+
+		
+

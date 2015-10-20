@@ -2,16 +2,14 @@
 CREATE TABLE users
 (
 	uId int PRIMARY KEY,
-	username varchar(20),
-	name varchar(20),
-	nameSurname varchar(30)
+	username varchar(20)
 );
 
-CREATE TABLE cvs
+CREATE TABLE adverts
 (
-	cvId int PRIMARY KEY,
-	cvFileName varchar(60) NULL
-	-- cvFile NULL
+	adId int PRIMARY KEY,
+	adName varchar(60) NULL
+	
 );
 
 CREATE TABLE havecvs

@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-  <head>
+  <hpacead>
     <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
 	<!-- Latest compiled and minified CSS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
+	<style type="text/css">
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 12px;
+  line-height: 2;
+  border-radius: 60px;
+}
+/*a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+}*/
+
+	</style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
-	<title>fractal/tutor list</title>>\
+	<title>fractal/tutor list</title>>
   <body>
   <!-- <div class="container" ng-controller="appCtrl">
  	
@@ -25,8 +44,13 @@
   </div>
   	
   </div> -->
-  
+
 <div>
+  <div>
+	<ul>
+		<!-- <"div ">		 -->
+	</ul>  	
+  </div>
 <div class="container" length="400" width="400">
   	<form class="userInfo">
   		Name: <input type="txt" maxlength="30" id="name"><br>
@@ -35,26 +59,31 @@
   		Email: <input type="txt" maxlength="30" id="email"><br>
   		password: <input type="txt" maxlength="30" id="pwd"><br>
   		password confirmation: <input type="txt" maxlength="30" id="pwd_conf"><br>
-  		<input align="left" type="submit" value="Submit" >
+  		<input align="left" type="submit" value="Submit"></a>
   	</form>
  </div>
 <div>
   		<button  type="button" id="register">register</button>
 </div>
+<div><a href="#" class="btn btn-default btn-circle"><i class="fa fa-user">x</i></a></div>
 </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+	<script type="text/javascript" src="/public/outputcatagories.js"></script>
 	<script type="text/javascript">
 	var myApp = angular.module('myApp', []);
+	// var fs = require('fs');
+	// fs.open('./public/files/catagories.json',function);
 
-$('.userInfo').hide();
+	$('.userInfo').hide();
 	$('#register').click(function(){
 	$('.userInfo').show();
 		});
 	
-	$('.userInfo').submit(function(){
 
+
+	$('.userInfo').submit(function(){
 		var name = $('#name').val(),
 			surname = $('#surname').val(),
 			phoneNumber = $('#phone').val(),
