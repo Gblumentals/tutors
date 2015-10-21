@@ -46,10 +46,9 @@
   </div> -->
 
 <div>
-  <div>
-	<ul>
+  <div>	<!-- <ul> -->
+<%- include catagories %>
 		<!-- <"div ">		 -->
-	</ul>  	
   </div>
 <div class="container" length="400" width="400">
   	<form class="userInfo">
@@ -65,13 +64,14 @@
 <div>
   		<button  type="button" id="register">register</button>
 </div>
+		});
 <div><a href="#" class="btn btn-default btn-circle"><i class="fa fa-user">x</i></a></div>
 </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
-	<script type="text/javascript" src="/public/outputcatagories.js"></script>
-	<script type="text/javascript">
+	<!-- // <script type="text/javascript" src="./public/outputcatagories.js"></script> -->
+	<script type="text/javascript">   
 	var myApp = angular.module('myApp', []);
 	// var fs = require('fs');
 	// fs.open('./public/files/catagories.json',function);
@@ -79,9 +79,7 @@
 	$('.userInfo').hide();
 	$('#register').click(function(){
 	$('.userInfo').show();
-		});
 	
-
 
 	$('.userInfo').submit(function(){
 		var name = $('#name').val(),
