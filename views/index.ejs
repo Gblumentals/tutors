@@ -47,7 +47,6 @@
 
 <div>
   <div>	<!-- <ul> -->
-<%- include catagories %>
 		<!-- <"div ">		 -->
   </div>
 <div class="container" length="400" width="400">
@@ -58,7 +57,7 @@
   		Email: <input type="txt" maxlength="30" id="email"><br>
   		password: <input type="txt" maxlength="30" id="pwd"><br>
   		password confirmation: <input type="txt" maxlength="30" id="pwd_conf"><br>
-  		<input align="left" type="submit" value="Submit"></a>
+  		<input type="submit" value="Submit">
   	</form>
  </div>
 <div>
@@ -91,8 +90,7 @@
 		alert([name, surname, phoneNumber, email, pwd, pwd_conf]);			
 	});
 
-
-
+});
 
 	// myApp.controller('userInfo', ['$scope',function($scope){
 	// 	console.log($scope.name);
