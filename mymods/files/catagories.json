@@ -38,7 +38,10 @@
 
 ]},{
 "Māksla un humanitārās zinātnes": [
-		    "Vēsture",
+		    {"Vēsture" : [
+		    "Latvijas vēsture",
+		    "Pasaules vēsture"
+		    ]},
 		    "Mūzika"
 	],
 "Mākslas vēsture":[
