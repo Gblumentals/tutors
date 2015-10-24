@@ -19,14 +19,10 @@
   line-height: 2;
   border-radius: 60px;
 }
-/*a {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #000;
-}*/
-
 	</style>
+<script type="text/javascript" src="ejs_production.js">
+	var 
+</script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 	<title>fractal/tutor list</title>>
@@ -43,10 +39,17 @@
   <div ng-controller="appCtrl">
   {{ gmes }}
   </div>
-  	
   </div> -->
 
 <div class="container-fluid">
+  	<div>
+<form>
+<% catagories %>
+<% for(var i =0; i< catagories.length; i++) { %>
+	<input type="button" value="<% catagories[i]; %>"> 
+	<% }; %>
+</form>
+  	</div>
   <div class="row">	<!-- <ul> -->
 	<div class="col-md-12">
 	<menu>
@@ -68,7 +71,7 @@
  </div>
  </div>
 <div>
-  		<button  type="button" id="register">register</button>
+  				<button  type="button" id="register">register</button>
 </div>
 		});
 <div><a href="#" class="btn btn-default btn-circle"><i class="fa fa-user">x</i></a></div>

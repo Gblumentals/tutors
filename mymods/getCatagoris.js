@@ -5,7 +5,7 @@ var getCatagories = function(){
  fs.readFile('files/catagories.json', function (err, data) {
   if (err) throw err;
 data = JSON.parse(JSON.stringify(data.toString()));
-	console.log(data);
+	// console.log(data);
 });
 };
 
